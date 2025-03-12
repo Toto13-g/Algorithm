@@ -260,14 +260,13 @@ st.title("Hammond Transfers and Ordinal Inequality Measurement: The Algorithm ")
 #Guideline
 st.header("Guideline:")
 st.markdown(""" The algorithm returns an ordered sequence of Hammond transfers that,
-                when applied sequentially, transform the dominated distribution 
-                into the dominant distribution. A Hammond transfer is noted 
+                when applied, transform the dominated distribution 
+                into the dominant distribution. A Hammond transfer is represented 
                 in the form of a zero-sum vector. In a vector, a negative number indicates
-                a decrease in the number of individuals in a given category. 
-                Conversely, a positive number indicates an increase in the number of individuals 
-                in a given category. For example, the vector (-1,0,2,-1) represents 
+                a decrease in the number of individuals in a given category and a positive number indicates an increase. 
+                For example, the vector (-1,0,2,-1) represents 
                 the Hammond transfer, which consists of transferring an individual from 
-                category 1 to category 3, and another individual from category 4 to category 3.""")
+                category 1 to category 3, and another individual from category 4 to category 3 and thus the number of individuals in category 3 increases by 2.""")
 
 # Demander à l'utilisateur d'entrer des distributions
 s_red_input = st.text_input("Dominated Distribution:")
